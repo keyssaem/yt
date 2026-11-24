@@ -36,3 +36,6 @@ docs/
 episodes/
 shorts/
 .claude/
+
+# 비공개 데이터 저장소 (scripts/data-sync.mjs)
+.git-data/
