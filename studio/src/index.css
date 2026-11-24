@@ -1,0 +1,43 @@
+@import 'tailwindcss';
+
+/* bible/03_style.json 팔레트 */
+@theme {
+  --color-bg: #0e0f12;
+  --color-elev: #17191e;
+  --color-elev2: #1e2127;
+  --color-text: #f2efe9;
+  --color-muted: #8a8e95;
+  --color-dim: #6b6f76;
+  --color-line: #2a2d33;
+  --color-accent: #e8b04b;
+  --color-fact: #7fb2c9;
+  --color-warn: #d9775b;
+  --color-ok: #8fbf8a;
+  --font-sans: 'Pretendard', 'Malgun Gothic', 'Noto Sans KR', system-ui, sans-serif;
+}
+
+html {
+  color-scheme: dark;
+}
+html,
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+}
+
+input,
+select,
+textarea {
+  background: var(--color-bg);
+  border: 1px solid var(--color-line);
+  border-radius: 6px;
+  padding: 6px 8px;
+  color: var(--color-text);
+}
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid var(--color-accent);
+  outline-offset: -1px;
+}

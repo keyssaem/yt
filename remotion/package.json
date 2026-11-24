@@ -1,0 +1,21 @@
+{
+  "name": "channel-remotion",
+  "version": "0.1.0",
+  "private": true,
+  "description": "채널 영상 렌더링 (Remotion). 스타일은 ../bible/03_style.json을 따른다.",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render:test": "remotion render src/index.ts ChapterCardTest out/chapter-card-test.mp4",
+    "still:test": "remotion still src/index.ts ChapterCardTest out/chapter-card-test.png --frame=60"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.546",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "remotion": "^4.0.546"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "typescript": "^7.0.2"
+  }
+}

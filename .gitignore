@@ -1,0 +1,38 @@
+# 외부 도구 (자체 저장소·대용량)
+openmontage/
+
+# 의존성·빌드 산출물
+node_modules/
+studio/dist/
+remotion/out/
+hyperframes/renders/
+.venv/
+
+# 비밀 정보
+.env
+.env.*
+!.env.example
+.claude/settings.local.json
+
+# 대용량 미디어 (로컬에만 둔다)
+episodes/**/audio/
+episodes/**/render/
+*.mp4
+*.mov
+*.wav
+*.mp3
+*.m4a
+*.flac
+
+# 로컬 전용 설정·캐시
+.claude/launch.json
+hyperframes/.hyperframes/
+*.tsbuildinfo
+
+# 채널 기획·운영 정보 (공개 저장소에 올리지 않는다. 로컬과 비공개 데이터 저장소에만 둔다)
+CLAUDE.md
+bible/
+docs/
+episodes/
+shorts/
+.claude/
